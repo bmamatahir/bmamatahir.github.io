@@ -9,6 +9,19 @@ function loadImage(companyName, artword) {
 
 export const projects = [
     {
+        logo: loadImage('spotfit', 'logo'),
+        status: ProjectStatus.OnHold,
+        name: 'Spotfit',
+        technologies: [Technologies.Angular, Technologies.Laravel, Technologies.Ionic, Technologies.Cordova],
+        color: '#DDBCFF',
+        screenshots: loadImage('spotfit', 'screenshots'),
+        description: `
+            Platform where each member has his own customizable application (client, gym owner, admin), plus a brochure website.
+            The application allows customers to explore gyms and pay passes with multiple methods of payment. 
+            The app is hybrid and the code has been written inside Angular framework and wrapped withing a Cordova webview to target multiple platform especially Android and IOS systems.  
+        `,
+    },
+    {
         logo: loadImage('hatom', 'logo'),
         status: ProjectStatus.Active,
         visitLink: 'https://hatom.com/',
@@ -28,6 +41,19 @@ export const projects = [
         `,
     },
     {
+        logo: loadImage('spotbills', 'logo'),
+        status: ProjectStatus.Active,
+        name: 'Spotbills',
+        visitLink: 'https://spotbills.com',
+        technologies: [Technologies.Angular, Technologies.ThreeJs, Technologies.RxJs],
+        color: '#FFCD65',
+        description: `
+            A static website describe the company products and services in creative manner with the power of Three.js. 
+            We developed a 3D world and a smart smooth UX, and we toke advantage of Angular as front-end to enhance user interactivity and website performance.
+        `,
+        screenshots: loadImage('spotbills', 'screenshots'),
+    },
+    {
         logo: loadImage('spotbusiness', 'logo'),
         status: ProjectStatus.Active,
         name: 'Spotbusiness',
@@ -41,32 +67,6 @@ export const projects = [
             I built and maintained the app from idea to production. In addition, The website respects SEO norms to generate the traffic and well recognized in search engine.
         `,
         screenshots: loadImage('spotbusiness', 'screenshots'),
-    },
-    {
-        logo: loadImage('spotfit', 'logo'),
-        status: ProjectStatus.OnHold,
-        name: 'Spotfit',
-        technologies: [Technologies.Angular, Technologies.Laravel, Technologies.Ionic, Technologies.Cordova],
-        color: '#DDBCFF',
-        screenshots: loadImage('spotfit', 'screenshots'),
-        description: `
-            Platform where each member has his own customizable application (client, gym owner, admin), plus a brochure website.
-            The application allows customers to explore gyms and pay passes with multiple methods of payment. 
-            The app is hybrid and the code has been written inside Angular framework and wrapped withing a Cordova webview to target multiple platform especially Android and IOS systems.  
-        `,
-    },
-    {
-        logo: loadImage('spotbills', 'logo'),
-        status: ProjectStatus.Active,
-        name: 'Spotbills',
-        visitLink: 'https://spotbills.com',
-        technologies: [Technologies.Angular, Technologies.ThreeJs, Technologies.RxJs],
-        color: '#FFCD65',
-        description: `
-            A static website describe the company products and services in creative manner with the power of Three.js. 
-            We developed a 3D world and a smart smooth UX, and we toke advantage of Angular as front-end to enhance user interactivity and website performance.
-        `,
-        screenshots: loadImage('spotbills', 'screenshots'),
     },
     {
         logo: loadImage('peer', 'logo'),
