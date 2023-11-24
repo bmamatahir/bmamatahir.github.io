@@ -1,8 +1,10 @@
 import React from 'react';
 import SkillCard from "./SkillCard";
 import {Technologies} from "./Technology";
-import {BiCodeAlt, BiPackage, FiDatabase, VscDeviceMobile, VscServerProcess} from "react-icons/all";
 import SkillCategory from "./SkillCategory";
+import { BiCodeAlt, BiPackage } from 'react-icons/bi';
+import { BsFillDatabaseFill } from 'react-icons/bs';
+import { VscServerProcess } from 'react-icons/vsc';
 
 const Skills = (props) => {
     const techSkills = [
@@ -10,8 +12,8 @@ const Skills = (props) => {
             name: 'Front End', icon: BiCodeAlt, items: [
                 Technologies.HTML5,
                 Technologies.CSS3,
-                Technologies.Angular,
                 Technologies.React,
+                Technologies.Angular,
                 Technologies.jQuery,
                 Technologies.Tailwind,
                 Technologies.Bootstrap,
@@ -28,22 +30,14 @@ const Skills = (props) => {
             name: 'Languages', icon: BiCodeAlt, items: [
 
                 Technologies.Javascript,
+                Technologies.Typescript,
                 Technologies.PHP,
                 Technologies.Dart,
-                Technologies.Python,
-                Technologies.Typescript,
+                Technologies.Rust,
             ]
         },
         {
-            name: 'Mobile', icon: VscDeviceMobile, items: [
-                Technologies.Flutter,
-                Technologies.PWA,
-                Technologies.Cordova,
-                Technologies.Ionic,
-            ]
-        },
-        {
-            name: 'Databases', icon: FiDatabase, items: [
+            name: 'Databases', icon: BsFillDatabaseFill, items: [
                 Technologies.Postgres,
                 Technologies.MongoDB,
                 Technologies.MySql,
@@ -59,6 +53,7 @@ const Skills = (props) => {
         {
             name: 'DevOps', icon: VscServerProcess, items: [
                 Technologies.Git,
+                Technologies.K8s,
                 Technologies.Docker,
             ]
         },

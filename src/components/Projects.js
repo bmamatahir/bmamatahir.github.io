@@ -16,7 +16,7 @@ const Projects = (props) => {
         slidesToShow: 2,
         slidesToScroll: 1,
         centerMode: true,
-        autoplay: true,
+        autoplay: false,
         pauseOnHover: true,
         pauseOnFocus: true,
         touchThreshold: 100,

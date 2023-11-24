@@ -1,8 +1,9 @@
 import {React, useState} from 'react';
-import {AiFillGithub, FiExternalLink} from "react-icons/all";
 import Budge from "./Budge";
 import Technology from "./Technology";
 import AutoScrollingBackground from "./AutoScrollingBackground";
+import { FiExternalLink } from 'react-icons/fi';
+import { RiGithubFill } from 'react-icons/ri';
 
 const ProjectCard = (props) => {
 
@@ -77,7 +78,7 @@ const ProjectCard = (props) => {
                     {/*Github*/}
                     {github &&
                     <div className="absolute bottom-3 right-3 opacity-30 sm:hidden">
-                        <a href={github} target="_blank" rel="noreferrer"><AiFillGithub size={30}/></a>
+                        <a href={github} target="_blank" rel="noreferrer"><RiGithubFill size={30}/></a>
                     </div>
                     }
 
@@ -95,7 +96,7 @@ const ProjectCard = (props) => {
                 {/*Github*/}
                 {github &&
                 <div className="absolute bottom-3 right-3 hidden sm:block bg-black p-1 rounded-full bg-opacity-50">
-                    <a href={github} target="_blank" rel="noreferrer"><AiFillGithub size={30} color="white"/></a>
+                    <a href={github} target="_blank" rel="noreferrer"><RiGithubFill size={30} color="white"/></a>
                 </div>
                 }
             </div>

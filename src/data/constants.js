@@ -9,6 +9,25 @@ function loadImage(companyName, artword) {
 
 export const projects = [
     {
+        logo: loadImage('hatom', 'logo'),
+        status: ProjectStatus.Active,
+        visitLink: 'https://hatom.com/',
+        name: 'Hatom',
+        technologies: [
+            Technologies.NextJs, 
+            Technologies.React, 
+            Technologies.Typescript, 
+            Technologies.Tailwind, 
+            Technologies.AWS, 
+            Technologies.GraphQL, 
+        ],
+        color: '#87EEB5',
+        screenshots: loadImage('hatom', 'screenshots'),
+        description: `
+            Hatom is a decentralized, algorithmic protocol for lending, borrowing, and staking assets, that operates on the MultiversX Network.
+        `,
+    },
+    {
         logo: loadImage('spotbusiness', 'logo'),
         status: ProjectStatus.Active,
         name: 'Spotbusiness',

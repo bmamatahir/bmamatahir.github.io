@@ -1,5 +1,5 @@
 import React from 'react';
-import {FiArrowRight} from "react-icons/all";
+import {FiChevronRight} from "react-icons/fi";
 import FindMe from "./FindMe";
 
 const CTACard = ({className = ''}) => {
@@ -16,7 +16,7 @@ const CTACard = ({className = ''}) => {
             <div className="flex items-center justify-center gap-3 flex-wrap">
                 <a href="mailto:b.mamatahir@gmail.com" className="text-yellow-400 border font-semibold py-2 px-4 rounded inline-flex items-center gap-2">
                     <span>CONTACT</span>
-                    <FiArrowRight/>
+                    <FiChevronRight/>
                 </a>
 
                 <FindMe hide='012'/>

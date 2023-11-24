@@ -1,21 +1,6 @@
 import React from 'react';
+
 import {
-    BiCodeAlt,
-    BiPackage,
-    BsFillBootstrapFill,
-    DiJqueryLogo,
-    DiJqueryUiLogo,
-    DiMongodb,
-    DiMysql,
-    DiPostgresql,
-    DiSqllite,
-    FaDocker,
-    FaGitAlt,
-    FaPhp,
-    FaReact,
-    FaWordpress,
-    GrPaypal,
-    HiDatabase,
     IoLogoAngular,
     IoLogoCss3,
     IoLogoFirebase,
@@ -27,17 +12,36 @@ import {
     IoLogoPwa,
     IoLogoPython,
     IoLogoVue,
-    RiFlutterFill,
-    SiApachecordova,
-    SiDart,
-    SiFlask,
-    SiGooglemaps,
-    SiMaterialUi,
-    SiSocketDotIo,
-    SiTailwindcss,
-    SiTypescript,
-    SiWebrtc,
-} from "react-icons/all";
+} from "react-icons/io5";
+
+import { BiCodeAlt, BiPackage, } from "react-icons/bi";
+import { BsFillBootstrapFill } from "react-icons/bs";
+
+import {
+    DiJqueryLogo,
+    DiJqueryUiLogo,
+    DiMongodb,
+    DiMysql,
+    DiPostgresql,
+    DiRust,
+    DiSqllite,
+} from "react-icons/di";
+
+import {
+    FaAws,
+    FaDocker,
+    FaGitAlt,
+    FaPhp,
+    FaReact,
+    FaWordpress,
+} from "react-icons/fa";
+
+import { SiApachecordova, SiDart, SiFlask, SiGooglemaps, SiGraphql, SiKubernetes, SiMaterialdesign, SiNextdotjs, SiSocketdotio, SiTailwindcss, SiTypescript, SiWebrtc } from "react-icons/si";
+
+import { GrPaypal } from "react-icons/gr";
+import { HiDatabase } from "react-icons/hi";
+import { RiFlutterFill } from "react-icons/ri";
+
 
 class Skill {
     constructor(label, color, icon = BiCodeAlt) {
@@ -57,7 +61,7 @@ export const Technologies = {
     Flutter: new Skill('Flutter', '#5CC4F0', (props) => <RiFlutterFill {...props}/>),
     PWA: new Skill('PWA', '#570FC2', (props) => <IoLogoPwa {...props}/>),
     WebRTC: new Skill('WebRTC', '#F7C600', (props) => <SiWebrtc {...props}/>),
-    SocketIO: new Skill('SocketIO', '#010101', (props) => <SiSocketDotIo {...props}/>),
+    SocketIO: new Skill('SocketIO', '#010101', (props) => <SiSocketdotio {...props}/>),
     Angular: new Skill('Angular', '#D6002F', (props) => <IoLogoAngular {...props}/>),
     Cordova: new Skill('Cordova', '#4C5562', (props) => <SiApachecordova {...props}/>),
     Ionic: new Skill('Ionic', '#4786F7', (props) => <IoLogoIonic {...props}/>),
@@ -71,12 +75,13 @@ export const Technologies = {
     ThreeJs: new Skill('ThreeJs', '#403D7E', (props) => <BiCodeAlt {...props}/>),
     RxJs: new Skill('RxJs', '#A1008D', (props) => <BiCodeAlt {...props}/>),
     AJAX: new Skill('AJAX', '#0780C6', (props) => <BiCodeAlt {...props}/>),
-    AngularMaterialUI: new Skill('AngularMaterialUI', '#F38800', (props) => <SiMaterialUi {...props}/>),
+    AngularMaterialUI: new Skill('AngularMaterialUI', '#F38800', (props) => <SiMaterialdesign {...props}/>),
     GoogleMaps: new Skill('Google Maps', '#32A34F', (props) => <SiGooglemaps {...props}/>),
     IoT: new Skill('IoT', '#57514F', (props) => <BiCodeAlt {...props}/>),
     PayPal: new Skill('PayPal', '#002E82', (props) => <GrPaypal {...props}/>),
     Docker: new Skill('Docker', '#1993EF', (props) => <FaDocker {...props}/>),
     Git: new Skill('Git', '#E84D31', (props) => <FaGitAlt {...props}/>),
+    K8s: new Skill('K8s', '#416BDD', (props) => <SiKubernetes {...props}/>),
     Firebase: new Skill('Firebase', '#F4C43D', (props) => <IoLogoFirebase {...props}/>),
     AlpineJs: new Skill('AlpineJs', '#9CC6D1', (props) => <BiCodeAlt {...props}/>),
     HiveDB: new Skill('Hive', '#F5E720', (props) => <HiDatabase {...props}/>),
@@ -93,6 +98,12 @@ export const Technologies = {
     NodeJs: new Skill('NodeJs', '#43853D', (props) => <IoLogoNodejs {...props}/>),
     HTML5: new Skill('HTML5', '#ff3e00', (props) => <IoLogoHtml5 {...props}/>),
     CSS3: new Skill('CSS3', '#2862E9', (props) => <IoLogoCss3 {...props}/>),
+    Rust: new Skill('Rust', '#000000', (props) => <DiRust {...props}/>),
+
+    GraphQL: new Skill('GraphQL', '#CC44A2', (props) => <SiGraphql {...props}/>),
+    AWS: new Skill('AWS', '#E99936', (props) => <FaAws {...props}/>),
+    NextJs: new Skill('NextJs', '#000000', (props) => <SiNextdotjs {...props}/>),
+
 
     /* Databases */
     Postgres: new Skill('Postgres', '#336791', (props) => <DiPostgresql {...props}/>),
