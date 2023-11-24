@@ -147,5 +147,6 @@ export const projects = [
 export const links = {
     github: 'https://github.com/bmamatahir',
     codinGame: 'https://www.codingame.com/profile/a6f1248dbc5265d36c117f072e21bdce3274172',
-    jood: 'https://jood.ma/'
+    jood: 'https://jood.ma/',
+    leetcode: 'https://leetcode.com/bmamatahir/',
 }
